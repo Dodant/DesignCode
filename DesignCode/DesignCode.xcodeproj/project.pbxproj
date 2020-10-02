@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB7BEB152527115300BCF114 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BEB142527115300BCF114 /* MenuView.swift */; };
 		BBA4475A2526DD9A00FB046F /* DesignCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA447592526DD9A00FB046F /* DesignCodeApp.swift */; };
 		BBA4475C2526DD9A00FB046F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA4475B2526DD9A00FB046F /* ContentView.swift */; };
 		BBA4475E2526DD9B00FB046F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBA4475D2526DD9B00FB046F /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB7BEB142527115300BCF114 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		BBA447562526DD9A00FB046F /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBA447592526DD9A00FB046F /* DesignCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeApp.swift; sourceTree = "<group>"; };
 		BBA4475B2526DD9A00FB046F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				BBA447592526DD9A00FB046F /* DesignCodeApp.swift */,
 				BBA4475B2526DD9A00FB046F /* ContentView.swift */,
+				BB7BEB142527115300BCF114 /* MenuView.swift */,
 				BBA4475D2526DD9B00FB046F /* Assets.xcassets */,
 				BBA447622526DD9B00FB046F /* Info.plist */,
 				BBA4475F2526DD9B00FB046F /* Preview Content */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBA4475C2526DD9A00FB046F /* ContentView.swift in Sources */,
+				BB7BEB152527115300BCF114 /* MenuView.swift in Sources */,
 				BBA4475A2526DD9A00FB046F /* DesignCodeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
