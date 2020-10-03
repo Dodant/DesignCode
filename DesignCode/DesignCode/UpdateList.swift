@@ -11,7 +11,7 @@ struct UpdateList: View {
     var body: some View {
 		NavigationView {
 			List(updateData) { update in
-				NavigationLink(destination: Text(update.text)) {
+				NavigationLink(destination: UpdateDetail(update: update)) {
 					HStack {
 						Image(update.image)
 							.resizable()
@@ -28,7 +28,7 @@ struct UpdateList: View {
 						  Text(update.text)
 							  .lineLimit(2)
 							  .font(.subheadline)
-							  .foregroundColor(Color.red)
+							.foregroundColor(Color.black)
 						  
 						  Text(update.date)
 							  .font(.caption)
