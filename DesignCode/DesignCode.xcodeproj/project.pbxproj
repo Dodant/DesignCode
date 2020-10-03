@@ -19,6 +19,8 @@
 		BBA4476C2526DD9B00FB046F /* DesignCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA4476B2526DD9B00FB046F /* DesignCodeTests.swift */; };
 		BBA447772526DD9C00FB046F /* DesignCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA447762526DD9C00FB046F /* DesignCodeUITests.swift */; };
 		BBED94802528705D0018C40A /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED947F2528705D0018C40A /* UpdateStore.swift */; };
+		BBED9485252874650018C40A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED9484252874650018C40A /* TabBar.swift */; };
+		BBED948D2528858F0018C40A /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED948C2528858F0018C40A /* RingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		BBA447762526DD9C00FB046F /* DesignCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeUITests.swift; sourceTree = "<group>"; };
 		BBA447782526DD9C00FB046F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBED947F2528705D0018C40A /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
+		BBED9484252874650018C40A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		BBED948C2528858F0018C40A /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				BB3DB35925285FC90050401D /* UpdateList.swift */,
 				BB7BEB142527115300BCF114 /* MenuView.swift */,
 				BBED947F2528705D0018C40A /* UpdateStore.swift */,
+				BBED948C2528858F0018C40A /* RingView.swift */,
+				BBED9484252874650018C40A /* TabBar.swift */,
 				BB3DB35E252867790050401D /* UpdateDetail.swift */,
 				BBA4475D2526DD9B00FB046F /* Assets.xcassets */,
 				BBA447622526DD9B00FB046F /* Info.plist */,
@@ -277,6 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBED948D2528858F0018C40A /* RingView.swift in Sources */,
+				BBED9485252874650018C40A /* TabBar.swift in Sources */,
 				BB3DB35F252867790050401D /* UpdateDetail.swift in Sources */,
 				BBA4475C2526DD9A00FB046F /* ContentView.swift in Sources */,
 				BB7BEB152527115300BCF114 /* MenuView.swift in Sources */,
