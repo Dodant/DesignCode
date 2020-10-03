@@ -20,6 +20,7 @@ struct HomeView: View {
 				Spacer()
 				
 				AvatarView(showProfile: $showProfile)
+					.shadow(color: Color.black.opacity(0.2), radius: 10, x: 1, y: 10)
 				
 				Button(action: { self.showUpdate.toggle() }) {
 					Image(systemName: "bell")

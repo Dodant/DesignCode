@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB3DB35A25285FC90050401D /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DB35925285FC90050401D /* UpdateList.swift */; };
 		BB7BEB152527115300BCF114 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BEB142527115300BCF114 /* MenuView.swift */; };
 		BB7BEB1A25271F7F00BCF114 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BEB1925271F7F00BCF114 /* Home.swift */; };
 		BB7BEB1F25273B9C00BCF114 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BEB1E25273B9C00BCF114 /* HomeView.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB3DB35925285FC90050401D /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 		BB7BEB142527115300BCF114 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		BB7BEB1925271F7F00BCF114 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		BB7BEB1E25273B9C00BCF114 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				BBA4475B2526DD9A00FB046F /* ContentView.swift */,
 				BB7BEB1925271F7F00BCF114 /* Home.swift */,
 				BB7BEB1E25273B9C00BCF114 /* HomeView.swift */,
+				BB3DB35925285FC90050401D /* UpdateList.swift */,
 				BB7BEB142527115300BCF114 /* MenuView.swift */,
 				BBA4475D2526DD9B00FB046F /* Assets.xcassets */,
 				BBA447622526DD9B00FB046F /* Info.plist */,
@@ -270,6 +273,7 @@
 			files = (
 				BBA4475C2526DD9A00FB046F /* ContentView.swift in Sources */,
 				BB7BEB152527115300BCF114 /* MenuView.swift in Sources */,
+				BB3DB35A25285FC90050401D /* UpdateList.swift in Sources */,
 				BB7BEB1A25271F7F00BCF114 /* Home.swift in Sources */,
 				BB7BEB1F25273B9C00BCF114 /* HomeView.swift in Sources */,
 				BBA4475A2526DD9A00FB046F /* DesignCodeApp.swift in Sources */,
