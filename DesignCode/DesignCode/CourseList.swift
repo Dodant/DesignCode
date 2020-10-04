@@ -9,28 +9,49 @@ import SwiftUI
 
 struct CourseList: View {
 	@State var courses = courseData
+	@State var active = false
+	@State var activeIndex = -1
 	
 	var body: some View {
-		ScrollView {
-			VStack(spacing: 30) {
-				Text("Courses")
-					.font(.largeTitle).bold()
-					.frame(maxWidth: .infinity, alignment: .leading)
-					.padding(.leading, 30)
-					.padding(.top, 30)
-				
-				ForEach(courses.indices, id: \.self) { index in
-					GeometryReader { geometry in
-						CourseView(show: self.$courses[index].show, course: self.courses[index])
-						  .offset(y: self.courses[index].show ? -geometry.frame(in: .global).minY : 0)
-				  }
-				  .frame(height: self.courses[index].show ? screen.height : 280)
-					.frame(maxWidth: self.courses[index].show ? .infinity : screen.width - 60)
-				}
-			}
-			.frame(width: screen.width)
-			.animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
+		ZStack {
+			Color.black.opacity(active ? 0.5 : 0)
+				.animation(.linear)
+				.edgesIgnoringSafeArea(.all)
 			
+			ScrollView {
+				VStack(spacing: 30) {
+					Text("Courses")
+						.font(.largeTitle).bold()
+						.frame(maxWidth: .infinity, alignment: .leading)
+						.padding(.leading, 30)
+						.padding(.top, 30)
+						.blur(radius: active ? 20 :0)
+					
+					ForEach(courses.indices, id: \.self) { index in
+						GeometryReader { geometry in
+							CourseView(
+								active: self.$active,
+								show: self.$courses[index].show,
+								activeIndex: self.$activeIndex,
+								course: self.courses[index],
+								index: index
+							)
+							.offset(y: self.courses[index].show ? -geometry.frame(in: .global).minY : 0)
+							.opacity(self.activeIndex != index && self.active ? 0 : 1)
+							.scaleEffect(self.activeIndex != index && self.active ? 0.5 : 1)
+							.offset(x: self.activeIndex != index && self.active ? screen.width : 0)
+						}
+						.frame(height: 280)
+						.frame(maxWidth: self.courses[index].show ? .infinity : screen.width - 60)
+						.zIndex(self.courses[index].show ? 1 : 0)
+					}
+				}
+				.frame(width: screen.width)
+				.animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
+				
+			}
+			//			.statusBar(hidden: active ? true : false)
+			.animation(.linear)
 		}
 	}
 }
@@ -42,9 +63,11 @@ struct CourseList_Previews: PreviewProvider {
 }
 
 struct CourseView: View {
-	
+	@Binding var active: Bool
 	@Binding var show: Bool
+	@Binding var activeIndex: Int
 	var course: Course
+	var index: Int
 	
 	var body: some View {
 		ZStack(alignment: .top) {
@@ -71,7 +94,6 @@ struct CourseView: View {
 							.foregroundColor(.white)
 						Text(course.subtitle)
 							.foregroundColor(Color.white.opacity(0.7))
-						
 					}
 					Spacer()
 					ZStack {
@@ -105,11 +127,17 @@ struct CourseView: View {
 			//		.animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
 			.onTapGesture {
 				self.show.toggle()
+				self.active.toggle()
+				if self.show {
+					self.activeIndex = self.index
+				} else {
+					self.activeIndex = -1
+				}
 			}
 		}
 		.frame(height: show ? screen.height : 280)
+		.animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
 		.edgesIgnoringSafeArea(.all)
-		.animation(.easeInOut)
 	}
 }
 
