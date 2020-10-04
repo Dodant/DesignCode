@@ -33,6 +33,7 @@
 		BBED94AE252974F70018C40A /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBED94A3252974F70018C40A /* Lato-BoldItalic.ttf */; };
 		BBED94AF252974F70018C40A /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBED94A4252974F70018C40A /* Lato-Light.ttf */; };
 		BBED94B0252974F70018C40A /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBED94A5252974F70018C40A /* Lato-ThinItalic.ttf */; };
+		BBED94B5252987550018C40A /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED94B4252987550018C40A /* CourseList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		BBED94A3252974F70018C40A /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
 		BBED94A4252974F70018C40A /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
 		BBED94A5252974F70018C40A /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		BBED94B4252987550018C40A /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				BB3DB35925285FC90050401D /* UpdateList.swift */,
 				BB7BEB142527115300BCF114 /* MenuView.swift */,
 				BBED947F2528705D0018C40A /* UpdateStore.swift */,
+				BBED94B4252987550018C40A /* CourseList.swift */,
 				BBED948C2528858F0018C40A /* RingView.swift */,
 				BBED9484252874650018C40A /* TabBar.swift */,
 				BB3DB35E252867790050401D /* UpdateDetail.swift */,
@@ -342,6 +345,7 @@
 				BBED9493252970C70018C40A /* Modifiers.swift in Sources */,
 				BBED9485252874650018C40A /* TabBar.swift in Sources */,
 				BB3DB35F252867790050401D /* UpdateDetail.swift in Sources */,
+				BBED94B5252987550018C40A /* CourseList.swift in Sources */,
 				BBA4475C2526DD9A00FB046F /* ContentView.swift in Sources */,
 				BB7BEB152527115300BCF114 /* MenuView.swift in Sources */,
 				BB3DB35A25285FC90050401D /* UpdateList.swift in Sources */,
