@@ -21,6 +21,18 @@
 		BBED94802528705D0018C40A /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED947F2528705D0018C40A /* UpdateStore.swift */; };
 		BBED9485252874650018C40A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED9484252874650018C40A /* TabBar.swift */; };
 		BBED948D2528858F0018C40A /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED948C2528858F0018C40A /* RingView.swift */; };
+		BBED9493252970C70018C40A /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED9492252970C70018C40A /* Modifiers.swift */; };
+		BBED94A6252974F70018C40A /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBED949B252974F70018C40A /* Lato-Italic.ttf */; };
+		BBED94A7252974F70018C40A /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBED949C252974F70018C40A /* Lato-LightItalic.ttf */; };
+		BBED94A8252974F70018C40A /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBED949D252974F70018C40A /* Lato-Thin.ttf */; };
+		BBED94A9252974F70018C40A /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBED949E252974F70018C40A /* Lato-Bold.ttf */; };
+		BBED94AA252974F70018C40A /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBED949F252974F70018C40A /* Lato-Black.ttf */; };
+		BBED94AB252974F70018C40A /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBED94A0252974F70018C40A /* Lato-Regular.ttf */; };
+		BBED94AC252974F70018C40A /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBED94A1252974F70018C40A /* Lato-BlackItalic.ttf */; };
+		BBED94AD252974F70018C40A /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = BBED94A2252974F70018C40A /* OFL.txt */; };
+		BBED94AE252974F70018C40A /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBED94A3252974F70018C40A /* Lato-BoldItalic.ttf */; };
+		BBED94AF252974F70018C40A /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBED94A4252974F70018C40A /* Lato-Light.ttf */; };
+		BBED94B0252974F70018C40A /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBED94A5252974F70018C40A /* Lato-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +73,18 @@
 		BBED947F2528705D0018C40A /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
 		BBED9484252874650018C40A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		BBED948C2528858F0018C40A /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		BBED9492252970C70018C40A /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		BBED949B252974F70018C40A /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		BBED949C252974F70018C40A /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		BBED949D252974F70018C40A /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		BBED949E252974F70018C40A /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		BBED949F252974F70018C40A /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		BBED94A0252974F70018C40A /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		BBED94A1252974F70018C40A /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		BBED94A2252974F70018C40A /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		BBED94A3252974F70018C40A /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BBED94A4252974F70018C40A /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		BBED94A5252974F70018C40A /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +145,9 @@
 				BBED948C2528858F0018C40A /* RingView.swift */,
 				BBED9484252874650018C40A /* TabBar.swift */,
 				BB3DB35E252867790050401D /* UpdateDetail.swift */,
+				BBED9492252970C70018C40A /* Modifiers.swift */,
 				BBA4475D2526DD9B00FB046F /* Assets.xcassets */,
+				BBED949A252974F70018C40A /* Lato */,
 				BBA447622526DD9B00FB046F /* Info.plist */,
 				BBA4475F2526DD9B00FB046F /* Preview Content */,
 			);
@@ -152,6 +178,24 @@
 				BBA447782526DD9C00FB046F /* Info.plist */,
 			);
 			path = DesignCodeUITests;
+			sourceTree = "<group>";
+		};
+		BBED949A252974F70018C40A /* Lato */ = {
+			isa = PBXGroup;
+			children = (
+				BBED949B252974F70018C40A /* Lato-Italic.ttf */,
+				BBED949C252974F70018C40A /* Lato-LightItalic.ttf */,
+				BBED949D252974F70018C40A /* Lato-Thin.ttf */,
+				BBED949E252974F70018C40A /* Lato-Bold.ttf */,
+				BBED949F252974F70018C40A /* Lato-Black.ttf */,
+				BBED94A0252974F70018C40A /* Lato-Regular.ttf */,
+				BBED94A1252974F70018C40A /* Lato-BlackItalic.ttf */,
+				BBED94A2252974F70018C40A /* OFL.txt */,
+				BBED94A3252974F70018C40A /* Lato-BoldItalic.ttf */,
+				BBED94A4252974F70018C40A /* Lato-Light.ttf */,
+				BBED94A5252974F70018C40A /* Lato-ThinItalic.ttf */,
+			);
+			path = Lato;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +301,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBED94AD252974F70018C40A /* OFL.txt in Resources */,
+				BBED94AA252974F70018C40A /* Lato-Black.ttf in Resources */,
 				BBA447612526DD9B00FB046F /* Preview Assets.xcassets in Resources */,
+				BBED94AF252974F70018C40A /* Lato-Light.ttf in Resources */,
+				BBED94A9252974F70018C40A /* Lato-Bold.ttf in Resources */,
+				BBED94AE252974F70018C40A /* Lato-BoldItalic.ttf in Resources */,
+				BBED94AB252974F70018C40A /* Lato-Regular.ttf in Resources */,
+				BBED94A6252974F70018C40A /* Lato-Italic.ttf in Resources */,
+				BBED94AC252974F70018C40A /* Lato-BlackItalic.ttf in Resources */,
+				BBED94A8252974F70018C40A /* Lato-Thin.ttf in Resources */,
 				BBA4475E2526DD9B00FB046F /* Assets.xcassets in Resources */,
+				BBED94B0252974F70018C40A /* Lato-ThinItalic.ttf in Resources */,
+				BBED94A7252974F70018C40A /* Lato-LightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBED948D2528858F0018C40A /* RingView.swift in Sources */,
+				BBED9493252970C70018C40A /* Modifiers.swift in Sources */,
 				BBED9485252874650018C40A /* TabBar.swift in Sources */,
 				BB3DB35F252867790050401D /* UpdateDetail.swift in Sources */,
 				BBA4475C2526DD9A00FB046F /* ContentView.swift in Sources */,
