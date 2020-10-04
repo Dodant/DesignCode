@@ -15,7 +15,7 @@ struct HomeView: View {
 		VStack {
 			HStack {
 				Text("Watching")
-					.font(.system(size: 28, weight: .bold))
+					.font(.system(size: 40, weight: .bold))
 				
 				Spacer()
 				
@@ -29,9 +29,9 @@ struct HomeView: View {
 						.frame(width: 36, height: 36)
 						.background(Color.white)
 						.clipShape(Circle())
-//						.shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
+						//						.shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
 						.shadow(color: Color.black.opacity(0.2), radius: 10, x: 1, y: 10)
-						
+					
 				}
 				.sheet(isPresented: $showUpdate, content: {
 					UpdateList()
@@ -39,6 +39,23 @@ struct HomeView: View {
 			}
 			.padding(.horizontal)
 			.padding(.top, 30)
+			
+			HStack(spacing: 12.0) {
+				RingView(color1: #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1), color2: #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1), width: 44, height: 44, percent: 68, show: .constant(true))
+				VStack(alignment: .leading, spacing: 4.0) {
+					Text("6 Minutes Left")
+						.font(.subheadline)
+						.fontWeight(.bold)
+					Text("Watched 10 mins today")
+						.font(.caption)
+				}
+				
+			}
+			.padding(8)
+			.background(Color.white)
+			.cornerRadius(20)
+			.shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
+			//			.shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
 			
 			ScrollView(.horizontal, showsIndicators: false) {
 				HStack(spacing: 20) {
