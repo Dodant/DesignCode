@@ -27,10 +27,11 @@ struct HomeView: View {
 					
 					Button(action: { self.showUpdate.toggle() }) {
 						Image(systemName: "bell")
-							.renderingMode(.original)
+//							.renderingMode(.original)
+							.foregroundColor(.primary)
 							.font(.system(size: 16, weight: .medium))
 							.frame(width: 36, height: 36)
-							.background(Color.white)
+							.background(Color("background3"))
 							.clipShape(Circle())
 							.modifier(ShadowModifier())
 						
@@ -79,6 +80,7 @@ struct HomeView: View {
 					.offset(y: -50)
 				Spacer()
 			}
+			.frame(width: screen.width)
 		}
 	}
 }
@@ -152,25 +154,23 @@ struct WatchRingView: View {
 				.modifier(FontModifier())
 			}
 			.padding(8)
-			.background(Color.white)
+			.background(Color("background3"))
 			.cornerRadius(20)
 			.modifier(ShadowModifier())
 			
 			HStack(spacing: 12.0) {
 				RingView(color1: #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1), color2: #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1), width: 32, height: 32, percent: 36, show: .constant(true))
-				
 			}
 			.padding(8)
-			.background(Color.white)
+			.background(Color("background3"))
 			.cornerRadius(20)
 			.modifier(ShadowModifier())
 			
 			HStack(spacing: 12.0) {
 				RingView(color1: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1), color2: #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), width: 32, height: 32, percent: 36, show: .constant(true))
-				
 			}
 			.padding(8)
-			.background(Color.white)
+			.background(Color("background3"))
 			.cornerRadius(20)
 			.modifier(ShadowModifier())
 		}

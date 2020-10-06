@@ -14,9 +14,9 @@ struct TabBar: View {
 				Image(systemName: "play.circle.fill")
 				Text("Home")
 			}
-			ContentView().tabItem {
+			CourseList().tabItem {
 				Image(systemName: "rectangle.stack.fill")
-				Text("Certificates")
+				Text("Courses")
 			}
 		}
 		.edgesIgnoringSafeArea(.top)
@@ -26,7 +26,7 @@ struct TabBar: View {
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
 		Group {
-			TabBar().previewDevice("iPhone 8")
+//			TabBar().previewDevice("iPhone 8")
 			TabBar().previewDevice("iPhone 11")
 		}
     }

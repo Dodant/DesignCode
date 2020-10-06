@@ -35,7 +35,7 @@ struct UpdateList: View {
 							Text(update.text)
 								.lineLimit(2)
 								.font(.subheadline)
-							  .foregroundColor(Color.black)
+								.foregroundColor(.primary)
 							
 							Text(update.date)
 								.font(.caption)
