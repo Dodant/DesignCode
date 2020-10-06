@@ -13,6 +13,7 @@
 		BB165CEA252AE7EC00F7A1C7 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB165CE9252AE7EC00F7A1C7 /* DataStore.swift */; };
 		BB165CF0252AEB8E00F7A1C7 /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = BB165CEF252AEB8E00F7A1C7 /* Contentful */; };
 		BB165CF5252AF5ED00F7A1C7 /* CourseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB165CF4252AF5ED00F7A1C7 /* CourseStore.swift */; };
+		BB29313F252CB49800A7AF34 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29313E252CB49800A7AF34 /* LoginView.swift */; };
 		BB3DB35A25285FC90050401D /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DB35925285FC90050401D /* UpdateList.swift */; };
 		BB3DB35F252867790050401D /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DB35E252867790050401D /* UpdateDetail.swift */; };
 		BB526886252AFF9000C81E2A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BB526885252AFF9000C81E2A /* SDWebImageSwiftUI */; };
@@ -68,6 +69,7 @@
 		BB0FD9E82529B700000E1A1A /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		BB165CE9252AE7EC00F7A1C7 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		BB165CF4252AF5ED00F7A1C7 /* CourseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStore.swift; sourceTree = "<group>"; };
+		BB29313E252CB49800A7AF34 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BB3DB35925285FC90050401D /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 		BB3DB35E252867790050401D /* UpdateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetail.swift; sourceTree = "<group>"; };
 		BB7BEB142527115300BCF114 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				BBA4475B2526DD9A00FB046F /* ContentView.swift */,
 				BB7BEB1925271F7F00BCF114 /* Home.swift */,
 				BB7BEB1E25273B9C00BCF114 /* HomeView.swift */,
+				BB29313E252CB49800A7AF34 /* LoginView.swift */,
 				BB3DB35925285FC90050401D /* UpdateList.swift */,
 				BB7BEB142527115300BCF114 /* MenuView.swift */,
 				BBED947F2528705D0018C40A /* UpdateStore.swift */,
@@ -392,6 +395,7 @@
 				BB0FD9DF2529AF60000E1A1A /* CourseDetail.swift in Sources */,
 				BB9B7793252C987400E2A9A5 /* Buttons.swift in Sources */,
 				BB7BEB1F25273B9C00BCF114 /* HomeView.swift in Sources */,
+				BB29313F252CB49800A7AF34 /* LoginView.swift in Sources */,
 				BBA4475A2526DD9A00FB046F /* DesignCodeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +555,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DesignCode/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DesignCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -572,6 +577,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DesignCode/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DesignCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
