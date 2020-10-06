@@ -41,3 +41,24 @@
 38. URL Images
 39. Background Blur
 40. Dark Mode and Accessibility
+
+41. Neumorphic Buttons
+42. Long Press Gesture
+43. Circle Button Animation
+44. Tap Progress Animation
+45. Haptic Feedback
+46. Login and Variable Font Size
+47. 3D Parallax and Looping Animation
+48. TextField and Password
+49. Keyboard and Alerts
+50. Lottie Loading Animation
+51. Success Sequence Animation
+52. Login with Firebase
+53. Login Environment Object
+54. Persistent Login with UserDefaults
+55. Adapting for iPad
+56. Environment Size Class
+57. Fixing the UI and Animation
+58. TabBar Below Views
+59. Scrollable Card Content
+60. Submit to the App Store
