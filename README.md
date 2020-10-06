@@ -21,6 +21,7 @@
 19. Combine and Edit Data
 20. Tab Bar and Test on Device
 
+
 21. Ring Progress Circle
 22. Ring Component and Formula
 23. Ring Animation
@@ -41,6 +42,7 @@
 38. URL Images
 39. Background Blur
 40. Dark Mode and Accessibility
+
 
 41. Neumorphic Buttons
 42. Long Press Gesture
