@@ -7,9 +7,26 @@ struct LoginView: View {
 	@State var showAlert = false
 	@State var alertMessage = "Something Went Wrong"
 	@State var isLoading = false
+	@State var isSuccessful = false
 	
 	func hideKeyboard() {
 		UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+	}
+	
+	func login(){
+		self.hideKeyboard()
+		self.isFocused = false
+		self.isLoading = true
+		
+		DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+			self.isLoading = false
+			//self.showAlert = true
+			self.isSuccessful = true
+			
+			DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+				self.isSuccessful = false
+			}
+		}
 	}
 	
 	var body: some View {
@@ -36,7 +53,7 @@ struct LoginView: View {
 						TextField("Your Email".uppercased(), text: $email)
 							.keyboardType(.emailAddress)
 							.font(.subheadline)
-							//					  .textFieldStyle(RoundedBorderTextFieldStyle())
+							//.textFieldStyle(RoundedBorderTextFieldStyle())
 							.padding(.leading)
 							.frame(height: 44)
 							.onTapGesture {
@@ -81,14 +98,7 @@ struct LoginView: View {
 					Spacer()
 					
 					Button(action: {
-						self.hideKeyboard()
-						self.isFocused = false
-						self.isLoading = true
-						
-						DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-							self.isLoading = false
-							self.showAlert = true
-						}
+						self.login()
 					}) {
 						Text("Log In").foregroundColor(.black)
 					}
@@ -114,6 +124,10 @@ struct LoginView: View {
 			if isLoading {
 				LoadingView()
 			}
+			
+			if isSuccessful {
+				SuccessView()
+			}
 		}
 	}
 }
@@ -121,7 +135,7 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
 	static var previews: some View {
 		LoginView()
-		//			.previewDevice("iPad Air 2")
+		//.previewDevice("iPad Air 2")
 	}
 }
 
