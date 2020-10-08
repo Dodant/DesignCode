@@ -1,0 +1,6 @@
+framework module Pods_DesignCode_DesignCodeUITests {
+  umbrella header "Pods-DesignCode-DesignCodeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
