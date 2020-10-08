@@ -1,10 +1,3 @@
-//
-//  LoadingView.swift
-//  DesignCode
-//
-//  Created by Junggyun Oh on 2020/10/07.
-//
-
 import SwiftUI
 
 struct LoadingView: View {
