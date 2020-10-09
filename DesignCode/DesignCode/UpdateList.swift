@@ -59,6 +59,7 @@ struct UpdateList: View {
 			}, trailing: EditButton())
 			
 		}
+		.navigationViewStyle(DoubleColumnNavigationViewStyle())
     }
 }
 

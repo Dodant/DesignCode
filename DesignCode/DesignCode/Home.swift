@@ -18,18 +18,7 @@ struct Home: View {
 			Color("background2")
 				.edgesIgnoringSafeArea(.all)
 			
-			HomeView(showProfile: $showProfile, showContent: $showContent)
-				.padding(.top, 44)
-				.background(
-					VStack {
-						LinearGradient(gradient: Gradient(colors: [Color("background2"), Color("background1")]), startPoint: .top, endPoint: .bottom)
-							.frame(height:200)
-						Spacer()
-					}
-					.background(Color("background1"))
-				)
-				.clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-				.shadow(color: Color/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/.opacity(0.2), radius: 20, x: 0, y: 20)
+			HomeBackgroundView(showProfile: $showProfile)
 				.offset(y: showProfile ? -450 : 0)
 				.rotation3DEffect(
 					Angle(degrees: showProfile ? Double(viewState.height / 10) - 10 : 0),
@@ -38,6 +27,8 @@ struct Home: View {
 				.animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
 				.edgesIgnoringSafeArea(.all)
 			
+			HomeView(showProfile: $showProfile, showContent: $showContent, viewState: $viewState)
+				
 			MenuView(showProfile: $showProfile)
 				.background(Color.black.opacity(0.001))
 				.offset(y: showProfile ? 0 : screen.height)
@@ -113,8 +104,8 @@ struct Home: View {
 struct Home_Previews: PreviewProvider {
 	static var previews: some View {
 		Home()
-//			.environment(\.colorScheme, .dark)
-//			.environment(\.sizeCategory, .extraExtraLarge)
+			//			.environment(\.colorScheme, .dark)
+			//			.environment(\.sizeCategory, .extraExtraLarge)
 			.environmentObject(UserStore())
 	}
 }
@@ -125,7 +116,7 @@ struct AvatarView: View {
 	
 	var body: some View {
 		VStack {
-			if user.isLogged {
+			if !user.isLogged {
 				Button(action: { self.showProfile.toggle() }) {
 					Image("Avatar")
 						.renderingMode(.original)
@@ -149,3 +140,18 @@ struct AvatarView: View {
 }
 
 let screen = UIScreen.main.bounds
+
+struct HomeBackgroundView: View {
+	@Binding var showProfile: Bool
+	
+	var body: some View {
+		VStack {
+			LinearGradient(gradient: Gradient(colors: [Color("background2"), Color("background1")]), startPoint: .top, endPoint: .bottom)
+				.frame(height:200)
+			Spacer()
+		}
+		.background(Color("background1"))
+		.clipShape(RoundedRectangle(cornerRadius: showProfile ? 30 : 0, style: .continuous))
+		.shadow(color: Color/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/.opacity(0.2), radius: 20, x: 0, y: 20)
+	}
+}
