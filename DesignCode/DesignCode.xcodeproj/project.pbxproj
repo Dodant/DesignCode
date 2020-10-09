@@ -27,6 +27,7 @@
 		BB3DB35A25285FC90050401D /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DB35925285FC90050401D /* UpdateList.swift */; };
 		BB3DB35F252867790050401D /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DB35E252867790050401D /* UpdateDetail.swift */; };
 		BB526886252AFF9000C81E2A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BB526885252AFF9000C81E2A /* SDWebImageSwiftUI */; };
+		BB71920F2530B0AA0056E965 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB71920E2530B0AA0056E965 /* Launch Screen.storyboard */; };
 		BB7BEB152527115300BCF114 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BEB142527115300BCF114 /* MenuView.swift */; };
 		BB7BEB1A25271F7F00BCF114 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BEB1925271F7F00BCF114 /* Home.swift */; };
 		BB7BEB1F25273B9C00BCF114 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BEB1E25273B9C00BCF114 /* HomeView.swift */; };
@@ -99,6 +100,7 @@
 		BB29313E252CB49800A7AF34 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BB3DB35925285FC90050401D /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 		BB3DB35E252867790050401D /* UpdateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetail.swift; sourceTree = "<group>"; };
+		BB71920E2530B0AA0056E965 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		BB7BEB142527115300BCF114 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		BB7BEB1925271F7F00BCF114 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		BB7BEB1E25273B9C00BCF114 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				BB0FD9E82529B700000E1A1A /* PostList.swift */,
 				BBED948C2528858F0018C40A /* RingView.swift */,
 				BB18A6E6252E03B000CA5E5E /* SuccessView.swift */,
+				BB71920E2530B0AA0056E965 /* Launch Screen.storyboard */,
 				BBED9484252874650018C40A /* TabBar.swift */,
 				BB3DB35E252867790050401D /* UpdateDetail.swift */,
 				BB3DB35925285FC90050401D /* UpdateList.swift */,
@@ -425,6 +428,7 @@
 				BB18A6CE252DFE4B00CA5E5E /* loading.json in Resources */,
 				BB18A6CF252DFE4B00CA5E5E /* success.json in Resources */,
 				BBED94A9252974F70018C40A /* Lato-Bold.ttf in Resources */,
+				BB71920F2530B0AA0056E965 /* Launch Screen.storyboard in Resources */,
 				BBED94AE252974F70018C40A /* Lato-BoldItalic.ttf in Resources */,
 				BBED94AB252974F70018C40A /* Lato-Regular.ttf in Resources */,
 				BB18A6EF252E08B600CA5E5E /* GoogleService-Info.plist in Resources */,
@@ -745,7 +749,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"DesignCode/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DY5CLPAQHF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DesignCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -769,7 +773,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"DesignCode/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DY5CLPAQHF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DesignCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
