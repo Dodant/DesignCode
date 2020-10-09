@@ -15,7 +15,7 @@ struct DesignCodeApp: App {
 	
     var body: some Scene {
         WindowGroup {
-            LoginView()
+			Home().environmentObject(UserStore())
         }
     }
 }

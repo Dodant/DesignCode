@@ -17,7 +17,7 @@ struct HomeView: View {
 			VStack {
 				HStack {
 					Text("Watching")
-						//					.font(.system(size: 40, weight: .bold))
+						//.font(.system(size: 40, weight: .bold))
 						.modifier(CustomFontModifier(size: 35))
 					
 					Spacer()
