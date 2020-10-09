@@ -15,8 +15,8 @@ struct DesignCodeApp: App {
 	
     var body: some Scene {
         WindowGroup {
-//			Home().environmentObject(UserStore())
-			CourseList()
+			Home().environmentObject(UserStore())
+//			CourseList()
         }
     }
 }

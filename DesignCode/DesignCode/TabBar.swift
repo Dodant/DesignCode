@@ -19,7 +19,7 @@ struct TabBar: View {
 				Text("Courses")
 			}
 		}
-		.edgesIgnoringSafeArea(.top)
+//		.edgesIgnoringSafeArea(.top)
     }
 }
 
@@ -28,6 +28,7 @@ struct TabBar_Previews: PreviewProvider {
 		Group {
 //			TabBar().previewDevice("iPhone 8")
 			TabBar().previewDevice("iPhone 11")
+				.environmentObject(UserStore())
 		}
     }
 }

@@ -27,7 +27,13 @@ struct Home: View {
 				.animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
 				.edgesIgnoringSafeArea(.all)
 			
-			HomeView(showProfile: $showProfile, showContent: $showContent, viewState: $viewState)
+//			TabView {
+				HomeView(showProfile: $showProfile, showContent: $showContent, viewState: $viewState)
+//					.tabItem {
+//						Image(systemName: "play.circle.fill")
+//						Text("Home")
+//					}
+//			}
 				
 			MenuView(showProfile: $showProfile)
 				.background(Color.black.opacity(0.001))
