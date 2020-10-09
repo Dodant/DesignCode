@@ -13,10 +13,12 @@ struct CourseDetail: View {
 	@Binding var show: Bool
 	@Binding var active: Bool
 	@Binding var activeIndex: Int
+	@Binding var isScrollable: Bool
+	var bounds: GeometryProxy
 	
 	var body: some View {
 		ScrollView {
-			VStack {
+			VStack(spacing: 0) {
 			  VStack {
 				  HStack(alignment: .top) {
 					  VStack(alignment: .leading, spacing: 8.0) {
@@ -40,6 +42,7 @@ struct CourseDetail: View {
 							self.show = false
 							self.active = false
 							self.activeIndex = -1
+							self.isScrollable = false
 						}
 					  }
 				  }
@@ -53,9 +56,10 @@ struct CourseDetail: View {
 			  .padding(show ? 30 : 20)
 			  .padding(.top, show ? 30 : 0)
 			  //		.frame(width: show ? screen.width : screen.width - 60, height: show ? screen.height : 280)
-			  .frame(maxWidth: show ? .infinity : screen.width - 60, maxHeight: show ? 460 : 280)
+			.frame(maxWidth: show ? .infinity : bounds.size.width - 60)
+			.frame(height: show ? 460 : 280)
 			  .background(Color(course.color))
-			  .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+			  .clipShape(RoundedRectangle(cornerRadius: getCardCornerRadius(bounds: bounds), style: .continuous))
 			  .shadow(color: Color(course.color).opacity(0.3), radius: 20, x: 0, y: 20)
 			  //		.animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
 			  
@@ -75,6 +79,8 @@ struct CourseDetail: View {
 
 struct CourseDetail_Previews: PreviewProvider {
 	static var previews: some View {
-		CourseDetail(course: courseData[0], show: .constant(true), active: .constant(true), activeIndex: .constant(-1))
+		GeometryReader { bounds in
+			CourseDetail(course: courseData[0], show: .constant(true), active: .constant(true), activeIndex: .constant(-1), isScrollable: .constant(true), bounds: bounds)
+		}
 	}
 }
