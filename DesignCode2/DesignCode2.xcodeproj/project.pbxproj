@@ -7,20 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB251C442532FBD4001F499D /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB251C432532FBD4001F499D /* CourseItem.swift */; };
+		BB251C4A2532FD26001F499D /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB251C492532FD26001F499D /* CourseList.swift */; };
 		BB9F5A472532D4CA00B83446 /* DesignCode2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F5A462532D4CA00B83446 /* DesignCode2App.swift */; };
 		BB9F5A492532D4CA00B83446 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F5A482532D4CA00B83446 /* ContentView.swift */; };
 		BB9F5A4B2532D4CB00B83446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9F5A4A2532D4CB00B83446 /* Assets.xcassets */; };
 		BB9F5A4E2532D4CB00B83446 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9F5A4D2532D4CB00B83446 /* Preview Assets.xcassets */; };
+		BB9F5B242532E38000B83446 /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F5B232532E38000B83446 /* CourseRow.swift */; };
+		BB9F5B272532E58100B83446 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F5B262532E58100B83446 /* CoursesView.swift */; };
+		BB9F5B2A2532E70300B83446 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9F5B292532E70300B83446 /* Sidebar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB251C432532FBD4001F499D /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
+		BB251C492532FD26001F499D /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		BB9F5A432532D4CA00B83446 /* DesignCode2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9F5A462532D4CA00B83446 /* DesignCode2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCode2App.swift; sourceTree = "<group>"; };
 		BB9F5A482532D4CA00B83446 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB9F5A4A2532D4CB00B83446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB9F5A4D2532D4CB00B83446 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB9F5A4F2532D4CB00B83446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB9F5A562532D56200B83446 /* DesignCode2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DesignCode2.entitlements; sourceTree = "<group>"; };
+		BB9F5B232532E38000B83446 /* CourseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRow.swift; sourceTree = "<group>"; };
+		BB9F5B262532E58100B83446 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
+		BB9F5B292532E70300B83446 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB251C462532FC98001F499D /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				BB9F5A482532D4CA00B83446 /* ContentView.swift */,
+				BB9F5B292532E70300B83446 /* Sidebar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		BB251C472532FCAE001F499D /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				BB251C432532FBD4001F499D /* CourseItem.swift */,
+				BB9F5B232532E38000B83446 /* CourseRow.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
 		BB9F5A3A2532D4CA00B83446 = {
 			isa = PBXGroup;
 			children = (
@@ -54,10 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				BB9F5A462532D4CA00B83446 /* DesignCode2App.swift */,
-				BB9F5A482532D4CA00B83446 /* ContentView.swift */,
+				BB251C462532FC98001F499D /* Navigation */,
+				BB251C472532FCAE001F499D /* Items */,
+				BB9F5B262532E58100B83446 /* CoursesView.swift */,
+				BB251C492532FD26001F499D /* CourseList.swift */,
 				BB9F5A4A2532D4CB00B83446 /* Assets.xcassets */,
 				BB9F5A4F2532D4CB00B83446 /* Info.plist */,
-				BB9F5A562532D56200B83446 /* DesignCode2.entitlements */,
 				BB9F5A4C2532D4CB00B83446 /* Preview Content */,
 			);
 			path = DesignCode2;
@@ -140,8 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB9F5B2A2532E70300B83446 /* Sidebar.swift in Sources */,
+				BB251C442532FBD4001F499D /* CourseItem.swift in Sources */,
 				BB9F5A492532D4CA00B83446 /* ContentView.swift in Sources */,
+				BB9F5B242532E38000B83446 /* CourseRow.swift in Sources */,
 				BB9F5A472532D4CA00B83446 /* DesignCode2App.swift in Sources */,
+				BB9F5B272532E58100B83446 /* CoursesView.swift in Sources */,
+				BB251C4A2532FD26001F499D /* CourseList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +304,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DesignCode2/DesignCode2.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DesignCode2/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DesignCode2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -281,7 +318,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.OJK.DesignCode2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,8 +332,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DesignCode2/DesignCode2.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DesignCode2/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DesignCode2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -304,7 +346,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.OJK.DesignCode2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct ContentView: View {
-	var body: some View {
+struct CourseItem: View {
+    var body: some View {
 		VStack(alignment: .leading, spacing: 4.0) {
 			Spacer()
 			HStack {
@@ -25,14 +25,8 @@ struct ContentView: View {
 	}
 }
 
-struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		Group {
-			ContentView()
-				
-			ContentView()
-				.previewLayout(.fixed(width: 200.0, height: 200.0))
-				.preferredColorScheme(.dark)
-		}
-	}
+struct CourseItem_Previews: PreviewProvider {
+    static var previews: some View {
+        CourseItem()
+    }
 }
