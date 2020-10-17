@@ -1,10 +1,3 @@
-//
-//  CourseList.swift
-//  DesignCode2
-//
-//  Created by Junggyun Oh on 2020/10/12.
-//
-
 import SwiftUI
 
 struct CourseList: View {

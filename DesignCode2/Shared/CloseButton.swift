@@ -1,10 +1,3 @@
-//
-//  CloseButton.swift
-//  DesignCode2
-//
-//  Created by Junggyun Oh on 2020/10/17.
-//
-
 import SwiftUI
 
 struct CloseButton: View {
