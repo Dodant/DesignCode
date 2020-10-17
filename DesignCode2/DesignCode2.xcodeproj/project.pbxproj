@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB373F69253ACEEB00E425EE /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB373F68253ACEEB00E425EE /* Course.swift */; };
+		BB373F6A253ACEEB00E425EE /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB373F68253ACEEB00E425EE /* Course.swift */; };
 		BB86CAC925342982006788A2 /* DesignCode2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86CAB625342982006788A2 /* DesignCode2App.swift */; };
 		BB86CACA25342982006788A2 /* DesignCode2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86CAB625342982006788A2 /* DesignCode2App.swift */; };
 		BB86CACB25342982006788A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86CAB725342982006788A2 /* ContentView.swift */; };
@@ -26,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB373F68253ACEEB00E425EE /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		BB86CAB625342982006788A2 /* DesignCode2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCode2App.swift; sourceTree = "<group>"; };
 		BB86CAB725342982006788A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB86CAB825342982006788A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 				BB86CAED25344DA9006788A2 /* Navigation */,
 				BB86CAEE25344DE8006788A2 /* Items */,
 				BB86CADE25343124006788A2 /* CoursesView.swift */,
+				BB373F68253ACEEB00E425EE /* Course.swift */,
 				BB86CAF125344E7B006788A2 /* CourseList.swift */,
 				BB86CAB825342982006788A2 /* Assets.xcassets */,
 			);
@@ -223,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB373F69253ACEEB00E425EE /* Course.swift in Sources */,
 				BB86CAE42534322A006788A2 /* Sidebar.swift in Sources */,
 				BB86CAE925344C9F006788A2 /* CourseItem.swift in Sources */,
 				BB86CACB25342982006788A2 /* ContentView.swift in Sources */,
@@ -237,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB373F6A253ACEEB00E425EE /* Course.swift in Sources */,
 				BB86CAE52534322A006788A2 /* Sidebar.swift in Sources */,
 				BB86CAEA25344C9F006788A2 /* CourseItem.swift in Sources */,
 				BB86CACC25342982006788A2 /* ContentView.swift in Sources */,
