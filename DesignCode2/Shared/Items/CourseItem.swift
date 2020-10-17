@@ -30,7 +30,7 @@ struct CourseItem: View {
 			
 		}
 		.padding(.all)
-		.cardStyle()
+		.cardStyle(color: course.color, cornerRadius: 22)
     }
 }
 
