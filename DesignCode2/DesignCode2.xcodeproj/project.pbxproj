@@ -30,6 +30,7 @@
 		BB373FA0253ADEED00E425EE /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB373F9F253ADEED00E425EE /* VisualEffectBlur.swift */; };
 		BB373FA4253ADEFD00E425EE /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB373FA3253ADEFD00E425EE /* VisualEffectBlur.swift */; };
 		BB373FA8253AE2D000E425EE /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB373FA7253AE2D000E425EE /* TabBar.swift */; };
+		BB373FAC253AE81C00E425EE /* CourseSectionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB373FAB253AE81C00E425EE /* CourseSectionDetail.swift */; };
 		BB86CAC925342982006788A2 /* DesignCode2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86CAB625342982006788A2 /* DesignCode2App.swift */; };
 		BB86CACA25342982006788A2 /* DesignCode2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86CAB625342982006788A2 /* DesignCode2App.swift */; };
 		BB86CACB25342982006788A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB86CAB725342982006788A2 /* ContentView.swift */; };
@@ -62,6 +63,7 @@
 		BB373F9F253ADEED00E425EE /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		BB373FA3253ADEFD00E425EE /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		BB373FA7253AE2D000E425EE /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		BB373FAB253AE81C00E425EE /* CourseSectionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSectionDetail.swift; sourceTree = "<group>"; };
 		BB86CAB625342982006788A2 /* DesignCode2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCode2App.swift; sourceTree = "<group>"; };
 		BB86CAB725342982006788A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB86CAB825342982006788A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				BB86CAEE25344DE8006788A2 /* Items */,
 				BB86CADE25343124006788A2 /* CoursesView.swift */,
 				BB373F77253ADAD300E425EE /* CourseDetail.swift */,
+				BB373FAB253AE81C00E425EE /* CourseSectionDetail.swift */,
 				BB373F72253AD87400E425EE /* CloseButton.swift */,
 				BB86CAF125344E7B006788A2 /* CourseList.swift */,
 				BB86CAB825342982006788A2 /* Assets.xcassets */,
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB373F69253ACEEB00E425EE /* Course.swift in Sources */,
+				BB373FAC253AE81C00E425EE /* CourseSectionDetail.swift in Sources */,
 				BB373F85253ADC0A00E425EE /* TutorialSection.swift in Sources */,
 				BB373FA8253AE2D000E425EE /* TabBar.swift in Sources */,
 				BB373F83253ADC0A00E425EE /* LivestreamSection.swift in Sources */,
